@@ -207,7 +207,7 @@ a {
 }
 
 .container {
-  max-width: 1350px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -267,5 +267,59 @@ a {
     position: absolute;
     bottom: -21rem;
     right: 2rem;
+  }
+}
+
+/* About Us block */
+.us__container {
+  text-align: left;
+  margin-top: 3.5rem;
+}
+
+.us__about {
+  max-width: 50rem;
+  justify-self: center;
+}
+
+.us__star-design,
+.us__cloud-design,
+.us__star-faded-design {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .block--us {
+    position: relative;
+    padding-top: 6rem;
+    padding-bottom: 15rem;
+  }
+
+  .us__heading {
+    margin-bottom: 4.5rem;
+    justify-self: center;
+  }
+
+  .us__cloud-design,
+  .us__star-design,
+  .us__star-faded-design {
+    display: initial;
+    position: absolute;
+  }
+
+  .us__star-design {
+    left: 6rem;
+    top: 2rem;
+  }
+
+  .us__cloud-design {
+    left: 8rem;
+    bottom: 3rem;
+  }
+  .us__star-faded-design {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
   }
 }
