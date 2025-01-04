@@ -66,3 +66,36 @@ p {
     font-size: 2.6rem;
   }
 }
+
+/* Button */
+.btn {
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2rem;
+  outline: 0;
+  padding: 1rem 2.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  text-wrap: nowrap;
+}
+
+.btn--image {
+  vertical-align: middle;
+  margin-right: 1.5rem;
+}
+
+.btn--primary {
+  background: #a40670;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.btn--primary:hover {
+  background: #a40670cc;
+}
+
+.btn--block {
+  width: 100%;
+}
