@@ -99,3 +99,25 @@ p {
 .btn--block {
   width: 100%;
 }
+
+/* About */
+.about {
+  padding: 1.5rem;
+  border-radius: 3rem;
+}
+
+.about--primary {
+  background: #a406701a;
+}
+
+.about--secondary {
+  background: #1a2c541a;
+}
+
+.about__heading {
+  margin-top: 1rem;
+}
+
+.about__text {
+  margin-bottom: 2rem;
+}
