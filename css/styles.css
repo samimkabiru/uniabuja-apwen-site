@@ -323,3 +323,46 @@ a {
     margin: auto;
   }
 }
+
+/* Secretary Block */
+.secretary__image {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 100%;
+  mix-blend-mode: multiply;
+}
+
+.secretary__achievements {
+  font-size: 2.3rem;
+}
+
+.secretary__name {
+  font-weight: 400;
+}
+
+.secretary__flag-design {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .block--secretary {
+    font-size: 2.2rem;
+    position: relative;
+  }
+
+  .secretary__flag-design {
+    display: initial;
+    position: absolute;
+    bottom: 10rem;
+    right: 6rem;
+  }
+
+  .secretary__achievements {
+    font-size: 4rem;
+  }
+
+  .secretary__image {
+    width: 40rem;
+    height: 40rem;
+  }
+}
