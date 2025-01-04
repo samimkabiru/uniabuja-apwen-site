@@ -167,3 +167,23 @@ p {
     font-size: 1.7rem;
   }
 }
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.grid-mobile--1x2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--2x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
