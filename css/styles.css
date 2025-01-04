@@ -121,3 +121,49 @@ p {
 .about__text {
   margin-bottom: 2rem;
 }
+
+/* Executives */
+.executive {
+  background: #a406701a;
+  border-radius: 4.5rem;
+  overflow: hidden;
+  border: 1px solid #909095;
+}
+
+.executive__body {
+  text-align: center;
+  padding: 2rem 1.5rem 3.5rem;
+}
+
+.executive__image {
+  border-radius: 4.5rem;
+  width: 100%;
+}
+
+.executive__name,
+.executive__position {
+  text-transform: capitalize;
+}
+
+.executive__name {
+  font-weight: 500;
+  font-size: 1.7;
+}
+
+.executive__position {
+  font-size: 1.4rem;
+}
+
+.executive__position::after {
+  content: ' APWEN uniabuja';
+}
+
+@media screen and (min-width: 1024px) {
+  .executive__name {
+    font-size: 2.1rem;
+  }
+
+  .executive__position {
+    font-size: 1.7rem;
+  }
+}
