@@ -187,3 +187,22 @@ p {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Block & Container */
+.block {
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+
+.block--pink {
+  background: #a406701a;
+}
+
+.block__heading {
+  margin-top: 0;
+}
+
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
+}
