@@ -129,7 +129,7 @@ a {
 /* Executives */
 .executive {
   background: #a406701a;
-  border-radius: 4.5rem;
+  border-radius: 3.5rem;
   overflow: hidden;
   border: 1px solid #909095;
 }
@@ -140,7 +140,7 @@ a {
 }
 
 .executive__image {
-  border-radius: 4.5rem;
+  border-radius: 3.5rem;
   width: 100%;
 }
 
@@ -151,11 +151,11 @@ a {
 
 .executive__name {
   font-weight: 500;
-  font-size: 1.7;
+  font-size: 1.4;
 }
 
 .executive__position {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .executive__position::after {
@@ -175,7 +175,7 @@ a {
 /* Grid Layout */
 .grid {
   display: grid;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .grid-mobile--1x2 {
@@ -364,5 +364,27 @@ a {
   .secretary__image {
     width: 40rem;
     height: 40rem;
+  }
+}
+
+/* Executives block */
+.block--executives {
+  margin-bottom: 6rem;
+}
+
+.executives__grid-1x2 {
+  margin-top: 2rem;
+}
+
+.executives__heading {
+  margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .executives__executive:nth-of-type(1) {
+    justify-self: self-end;
+  }
+  .executives__executive:nth-of-type(2) {
+    justify-self: self-start;
   }
 }
