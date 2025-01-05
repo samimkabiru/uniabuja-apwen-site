@@ -87,7 +87,7 @@ a {
 
 .btn--image {
   vertical-align: middle;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 
 .btn--primary {
@@ -445,5 +445,134 @@ a {
   .footer__logo {
     width: 10rem;
     height: 8rem;
+  }
+}
+
+/* Navigation bar */
+.nav {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #a406701a;
+  padding: 1rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: auto;
+}
+
+.nav__body {
+  background: #fff4fb;
+  box-shadow: -25rem 0 #1a2c5499;
+  height: 100vh;
+  padding: 8rem 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 78%;
+  z-index: -1;
+  transition: max-height 0.3s, padding 0.3s, box-shadow 0.3s, overflow 0.3s;
+}
+
+.nav__logo {
+  width: 6rem;
+  height: 4rem;
+  position: relative;
+  z-index: -1;
+}
+
+.nav__menu {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: relative;
+}
+
+.nav__close {
+  position: absolute;
+  left: 0;
+}
+
+.nav__open {
+  display: none;
+}
+
+.nav__item {
+  padding: 1rem 0;
+}
+
+.nav__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav__item a {
+  color: #1a2c54;
+}
+
+.nav__item:hover a {
+  text-decoration: underline;
+}
+
+.nav--btn {
+  max-width: 50rem;
+}
+
+.nav--collapsed .nav__body {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.nav--collapsed .nav__open {
+  display: initial;
+}
+
+.nav--collapsed .nav__close {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    flex-wrap: nowrap;
+    padding: 1.5rem 1rem;
+  }
+
+  .nav__menu {
+    display: none;
+  }
+
+  .nav__body {
+    box-shadow: none;
+    position: initial;
+    height: auto;
+    background: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 0;
+    justify-items: center;
+    width: 85%;
+  }
+
+  .nav__list {
+    margin: 0;
+    justify-self: end;
+  }
+
+  .nav__item {
+    display: inline-block;
+    margin-right: 2rem;
+  }
+
+  .nav--btn {
+    width: initial;
+    justify-self: end;
+  }
+
+  .nav--collapsed .nav__body {
+    max-height: 100%;
+    overflow: visible;
   }
 }
