@@ -212,9 +212,17 @@ a {
 }
 
 /* Hero */
+.block--hero {
+  padding-bottom: 8rem;
+}
+
 .hero__italic {
   font-weight: 300;
   font-style: italic;
+}
+
+.hero__body {
+  margin-bottom: 3rem;
 }
 
 .hero__text {
@@ -239,7 +247,7 @@ a {
 
 @media screen and (min-width: 1024px) {
   .block--hero {
-    padding: 8rem 2rem 10rem;
+    padding: 10rem 2rem 10rem;
     position: relative;
     overflow: hidden;
   }
@@ -330,6 +338,8 @@ a {
   height: 20rem;
   border-radius: 100%;
   mix-blend-mode: multiply;
+  position: relative;
+  z-index: -1;
 }
 
 .secretary__achievements {
@@ -387,6 +397,14 @@ a {
   .executives__executive:nth-of-type(2) {
     justify-self: self-start;
   }
+  .executives__grid-1x2 {
+    margin-top: 3rem;
+    gap: 3rem;
+  }
+
+  .executives__grid-2x3 {
+    gap: 3rem;
+  }
 }
 
 /* Footer */
@@ -420,7 +438,6 @@ a {
 
 .footer__text {
   margin: 0 1.5rem 0.5rem 0;
-  text-decoration: underline;
   text-transform: capitalize;
 }
 
@@ -456,10 +473,11 @@ a {
   justify-content: space-between;
   background: #a406701a;
   padding: 1rem;
-  position: fixed;
+  position: relative;
   left: 0;
   right: 0;
   width: auto;
+  z-index: 1;
 }
 
 .nav__body {
@@ -508,6 +526,8 @@ a {
 
 .nav__item a {
   color: #1a2c54;
+  width: 100%;
+  display: inline-block;
 }
 
 .nav__item:hover a {
@@ -574,5 +594,23 @@ a {
   .nav--collapsed .nav__body {
     max-height: 100%;
     overflow: visible;
+  }
+}
+
+/* Header section */
+.header {
+  position: relative;
+}
+
+.header__rectangle-design {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__rectangle-design {
+    display: initial;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
